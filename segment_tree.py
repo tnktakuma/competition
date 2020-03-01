@@ -6,8 +6,8 @@ class SegmentTree:
         self.a = a
         self.n = len(a)
         self.identity = identity
-        self.depth = (self.n - 1).bit_length
-        self.segment = 1 << self.depth - 1
+        self.depth = (self.n - 1).bit_length()
+        self.segment = (1 << self.depth) - 1
         self.tree = [identity] * (self.segment * 2 + 1)
         self.tree[self.segment : self.n + self.segment] = a
         for i in range(self.segment - 1, -1, -1):
