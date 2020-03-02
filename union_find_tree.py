@@ -14,10 +14,10 @@ class UnionFindTree:
         if ri != rj:
             if self.rank[ri] < self.rank[rj]:
                 self.parent[ri] = rj
-        else:
-            self.parent[rj] = ri
-            if self.rank[ri] == self.rank[rj]:
-                self.rank[ri] += 1
+            else:
+                self.parent[rj] = ri
+                if self.rank[ri] == self.rank[rj]:
+                    self.rank[ri] += 1
 
     def is_same(self, i: int, j: int) -> bool:
         return self.find(i) == self.find(j)
