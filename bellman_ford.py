@@ -2,9 +2,9 @@ from typing import List, Union
 
 
 class BellmanFord:
-    def __init__(self, edge):
+    def __init__(self, n: int, edge):
+        self.n = n
         self.edge = edge
-        self.n = len(edge)
         self.prev = list(range(self.n))
         self.dist = [float('inf')] * self.n
 
