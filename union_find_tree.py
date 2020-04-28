@@ -1,4 +1,9 @@
 class UnionFindTree:
+    """Union Find Tree for disjoint-set data structure.
+
+    Args:
+        n (int): number of the vertices.
+    """
     def __init__(self, n: int):
         self.parent = list(range(n))
         self.rank = [0] * n

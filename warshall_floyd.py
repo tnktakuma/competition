@@ -2,6 +2,11 @@ from typing import List, Union
 
 
 class WarshallFloyd:
+    """Warshall-Floyd Algorithm return the shortest pathes at weighted graph.
+
+    Args:
+        dist: weighted adjacent matrix.
+    """
     def __init__(self, dist):
         self.dist = dist 
         self.n = len(dist)

@@ -3,6 +3,13 @@ from typing import List, Union
 
 
 class Dijkstra:
+    """Dijkstra Algorithm returns the shortest path at positive weighted graph.
+
+    Args:
+        edge (List[List[(w, v)]]): adjacent list with the weight.
+            w (Union[int, float]): positive weight.
+            v (int): the edge's terminal vertex.
+    """
     def __init__(self, edge):
         self.edge = edge
         n = len(edge)

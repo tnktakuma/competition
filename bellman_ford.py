@@ -2,6 +2,15 @@ from typing import List, Union
 
 
 class BellmanFord:
+    """Bellman-Ford Algorithm returns the shortest path at weighted graph.
+
+    Args:
+        n (int): number of the vertices.
+        edge (List[(i, j, w)]): weighted edge list.
+            i (int): the edge's source.
+            j (int): the edge's destination.
+            w (Union[int, float]): the edge's weight.
+    """
     def __init__(self, n: int, edge):
         self.n = n
         self.edge = edge

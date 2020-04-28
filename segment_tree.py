@@ -2,6 +2,12 @@ from typing import List
 
 
 class SegmentTree:
+    """Segmant Tree for query process.
+
+    Args:
+        a (List[int]): array.
+        identity (int): identity element with f.
+    """
     def __init__(self, a: List[int], identity: int):
         self.a = a
         self.n = len(a)
